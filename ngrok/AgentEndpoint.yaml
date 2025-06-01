@@ -1,0 +1,11 @@
+apiVersion: ngrok.k8s.ngrok.com/v1alpha1
+kind: AgentEndpoint
+metadata:
+  name: yumzibah-mapper
+  namespace: default
+spec:
+  bindings:
+  - public
+  upstream:
+    url: http://localhost:80
+  url: https://carefully-loving-teal.ngrok-free.app
